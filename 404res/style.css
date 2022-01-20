@@ -100,6 +100,7 @@ body {
 a {
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a::before {
