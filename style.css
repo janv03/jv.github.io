@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Baloo 2', cursive;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: linear-gradient(to left, #ff1100, #00f7ff);
+}
+
+.banner-text {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.banner-text ul {
+    height: 50px;
+    float: right;
+}
+
+.banner-text ul li {
+    display: inline-block;
+    padding: 20px 20px;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.banner-text ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.banner-text h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 20%;
+}
+
+.wImg {
+    color: white;
+}
+
+.banner-text .wImg {
+    text-align: center;
+}
+
+img {
+    width: 0;
+    height: 0
+}
+
+.img {
+    text-align: center;
+    width: 96px;
+    height: 96px;
+    border-radius: 100px;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+    margin-left: 1em;
+}
+
+.img:hover {
+    width: 106px;
+    height: 106px;
+}
+
+.animation-area {
+    background: linear-gradient(to left, #8942a8, #ba382f);
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+}
+
+.box-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box-area li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.8);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+}
+
+.box-area li:nth-child(1) {
+    left: 86%;
+    width: 80px;
+    background: rgba(255, 255, 255, 0.45);
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.box-area li:nth-child(2) {
+    left: 12%;
+    background: rgba(255, 255, 255, 0.5);
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+
+.box-area li:nth-child(3) {
+    left: 70%;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    height: 100px;
+    animation-delay: 5.5s;
+}
+
+.box-area li:nth-child(4) {
+    left: 42%;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.35);
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.box-area li:nth-child(5) {
+    background: rgba(255, 255, 255, 0.3);
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+
+.box-area li:nth-child(6) {
+    left: 15%;
+    background: rgba(255, 255, 255, 0.45);
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+
+.hide {
+    position: inherit;
+}
+
+
+
+
+/* Mail css */
+
+
+  section {
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    color: rgb(27, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease background-color;
+  }
+  button[type="submit"]:hover {
+    background-color: rgb(214, 226, 236);
+  }
+  #status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  #status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+  }
+  #status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+  }
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  
+  
+  @keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width:860px) {
+    .img {
+        text-align: center;
+        width: 76px;
+        height: 76px;
+        border-radius: 100px;
+        margin-top: 0.5em;
+        margin-bottom: 0.3em;
+        margin-left: 1em;
+    }
+    .img:hover {
+        width: 86px;
+        height: 86px;
+    }
+}
+
+@media (max-width:520px) {
+    .banner-text ul li {
+        font-size: 15px
+    }
+    .banner-text ul li:hover {
+        font-size: 18px
+    }
+    .img {
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 100px;
+        margin-top: 5em;
+        margin-bottom: 0.3em;
+        margin-left: 1em;
+    }
+    .img:hover {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media (max-width:440px) {
+    .banner-text ul li {
+        font-size: 13px
+    }
+    .banner-text ul li:hover {
+        font-size: 16px
+    }
+    .img {
+        text-align: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        margin-top: 6em;
+        margin-bottom: 0.3em;
+        margin-left: 1em;
+    }
+    .img:hover {
+        width: 65px;
+        height: 65px;
+    }
+}
+  
