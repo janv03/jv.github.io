@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="resources/sMail.css">
+    <link rel="shortcut icon" href="img/me.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send me email | My sites</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <form action="https://formspree.io/f/xyyoyqkz" method="POST" id="my-form">
+
+                <div class="form-group">
+                    <label for="firstName"> Jméno</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="latsName">Příjmení</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="massage">Zpráva</label>
+                    <textarea name="massage" id="massage" cols="10" rows="3" required></textarea>
+                </div>
+
+                <button type="submit">ODESLAT</button>
+            </form>
+        </div>
+        <div id="status"></div>
+    </section>
+    <script src="/resources/mainMail.js"></script>
+</body>
+
+</html>
